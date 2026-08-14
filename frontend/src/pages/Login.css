@@ -1,0 +1,25 @@
+.login-screen { min-height: 100vh; display: grid; grid-template-columns: minmax(0, 460px) 1fr; }
+.login-panel { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 48px 56px; background: #fff; }
+.login-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 34px; color: #26344d; font: 700 20px 'Plus Jakarta Sans', sans-serif; letter-spacing: -.8px; }
+.login-brand .brand-mark { width: 32px; height: 32px; display: grid; place-items: center; background: linear-gradient(135deg,#a78bfa,#7464dd); border-radius: 9px; color: #fff; font-size: 17px; }
+.login-brand span:last-child span { color: #7159d9; }
+.login-panel h1 { margin: 0 0 8px; color: #1c2740; font: 800 30px 'Plus Jakarta Sans', sans-serif; letter-spacing: -1px; }
+.login-copy { margin: 0 0 26px; color: #8891a5; font-size: 14px; line-height: 1.5; }
+.login-error { margin: -10px 0 18px; padding: 10px 12px; border-radius: 8px; color: #c0403f; background: #fdeceb; font-size: 13px; }
+.login-form { display: grid; gap: 16px; }
+.login-form label { display: grid; gap: 6px; color: #4a5567; font-size: 13px; font-weight: 600; }
+.login-form input { width: 100%; border: 1px solid #dde2ea; border-radius: 9px; padding: 12px 13px; outline-color: #7667d8; font-size: 14px; }
+.login-form .primary-button { margin-top: 6px; padding: 12px; border-radius: 9px; background: #6657d4; color: #fff; border: 0; font-weight: 700; font-size: 14px; box-shadow: 0 10px 20px #6657d42e; }
+.login-form .primary-button:disabled { opacity: .7; }
+.login-switch { margin: 22px 0 0; color: #8891a5; font-size: 13px; }
+.login-switch button { border: 0; background: none; padding: 0; color: #6657d4; font-weight: 700; font-size: 13px; }
+.login-showcase { position: relative; display: flex; align-items: flex-end; padding: 56px; background: linear-gradient(160deg, #5c4dd6, #7f6ff0 60%, #9a8cf5); overflow: hidden; }
+.login-showcase::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 340px; height: 340px; border-radius: 50%; background: #ffffff22; }
+.showcase-card { position: relative; max-width: 380px; padding: 26px; border-radius: 16px; background: #ffffff1a; backdrop-filter: blur(6px); color: #fff; }
+.showcase-card h2 { margin: 0 0 10px; font: 700 22px 'Plus Jakarta Sans', sans-serif; }
+.showcase-card p { margin: 0; color: #ece9ff; font-size: 14px; line-height: 1.6; }
+@media (max-width: 860px) {
+  .login-screen { grid-template-columns: 1fr; }
+  .login-showcase { display: none; }
+  .login-panel { padding: 40px 24px; }
+}

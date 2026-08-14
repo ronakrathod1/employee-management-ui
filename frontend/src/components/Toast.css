@@ -1,0 +1,9 @@
+.toast-stack { position: fixed; top: 20px; right: 20px; z-index: 100; display: grid; gap: 10px; max-width: 360px; }
+.toast { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 10px; background: #fff; border: 1px solid #e7eaf1; box-shadow: 0 12px 30px #16223822; font-size: 13px; color: #37435a; animation: toast-in .18s ease-out; }
+.toast-icon { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; font-size: 12px; font-weight: 700; flex: 0 0 22px; }
+.toast-success .toast-icon { color: #359b6d; background: #e8f8ef; }
+.toast-error .toast-icon { color: #d7534f; background: #fdeceb; }
+.toast-message { flex: 1; line-height: 1.4; }
+.toast-close { border: 0; background: none; color: #9aa3b2; font-size: 18px; padding: 0 0 0 4px; }
+.toast-close:hover { color: #5a6578; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
